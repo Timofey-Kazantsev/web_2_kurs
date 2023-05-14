@@ -1,0 +1,297 @@
+p 
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+} 
+a{
+  text-decoration:none
+}
+.curPage
+{
+  background-color: gray;
+}
+.box 
+{
+    background: url(Images/4853433.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 1000px;
+}
+
+.header 
+{ 
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 30px;/* some padding */
+    text-align: center; /* center the text */
+    background: url(Images/wepik-photo-mode-2022930-204548.jpeg); /* green background */
+    color: black; /* white text color */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+.name
+{
+    margin: 0px;  
+    font-size: 75px;
+}
+
+.name-p
+{
+    margin: 0px;
+    font-size: 50px;
+}
+
+.navbar 
+{
+    overflow: hidden; /* Hide overflow */
+    background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a 
+{
+    margin: 0;
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right 
+{
+    float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover 
+{
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+}
+
+.row 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side 
+{
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: #f1f1f1; /* Grey background color */
+    padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.contents 
+{
+    display: flex;
+    flex: 70%; 
+    padding: 30px;
+    height: 100%;
+    flex-direction: column;
+}
+
+.footer 
+{
+    text-align: center; /* Center text*/
+    background-color: #31353d; /* Grey background */
+    color:white;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: flex-end;
+    
+    
+}
+
+.text 
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.text10let 
+{
+    max-width: 680px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 20px;
+}
+
+.text10let2 
+{
+    padding-top: 20px;
+    max-width: 680px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 20px;
+}
+
+.imageradomssliderom 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    color: white;  
+}
+
+.imagetext1 
+{
+    position: absolute;
+    align-items: flex-end;
+    color: black;
+    display: flex;
+    margin: 30px;
+    padding-left: 200px;
+    color: white;
+    font-size: 10px;
+       
+}
+
+.imagetext2 
+{
+    position: absolute;
+    align-items: center;
+    color: black;
+    display: flex;
+    margin: 150px;
+    padding-left: 93px;
+    color: white;
+    font-size: 10px;
+    width: 300px;
+}
+
+.imagetext3 
+{
+    position: absolute;
+    align-items: center;
+    color: black;
+    display: flex;
+    margin: 8px;
+    padding-top: 250px;
+    color: white;
+    font-size: 10px;
+    width: 300px;
+}
+
+.preimush h1 {
+    margin: 0px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.preimushestva {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.cont1
+{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cont2
+{
+    display: flex;
+}
+.prem
+{
+    display: flex;
+    justify-content: center;
+}
+.tupoi_text
+{
+    font-size: 20px;
+}
+@media (max-width: 767px) {
+    .bottom {
+      height: auto;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .info_bottom {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .number_bottom,
+    .mail_bottom,
+    .adress {
+      margin: 5px 0;
+      font-size: 14px;
+      letter-spacing: normal;
+      text-align: center;
+    }
+  }
+
+  /* Для компьютера */
+  @media (min-width: 768px) {
+    .bottom {
+      height: 70px;
+    }
+
+    .info_bottom {
+      justify-content: space-around;
+    }
+
+    .number_bottom,
+    .mail_bottom,
+    .adress {
+      font-size: 15px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .info_bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .number_bottom,
+  .mail_bottom {
+    color: white;
+    letter-spacing: 2px;
+  }
+
+  .adress {
+    color: white}

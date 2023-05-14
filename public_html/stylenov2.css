@@ -1,0 +1,326 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+} 
+a{
+  text-decoration:none
+}
+.curPage
+{
+  background-color: gray;
+}
+.box {
+    background: url(Images/4853433.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+   
+    
+}
+
+.header { 
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 30px;/* some padding */
+    text-align: center; /* center the text */
+    background: url(Images/wepik-photo-mode-2022930-204548.jpeg); /* green background */
+    color: black; /* white text color */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+.name
+{
+    margin: 0px;  
+    font-size: 75px;
+}
+.name-p{
+    margin: 0px;
+    font-size: 50px;
+}
+.navbar {
+    overflow: hidden; /* Hide overflow */
+    background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    margin: 0;
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+}
+
+.contents {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: wrap column;
+    align-content: space-between;
+    
+}
+.Cont1 {
+    display: flex;
+    align-content: center;
+    flex-flow: column wrap;
+    align-content: space-between;
+    font-size: 20px;
+    padding-bottom: 180px;
+    
+    
+}
+    
+
+.footer
+{
+    height: 100px;
+    background-color: #333;
+    
+}
+p 
+{
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+    
+.ul 
+{
+    display: flex;
+    list-style: none;
+}
+.submenu
+{
+    flex-direction: column;
+    position: absolute;
+}
+
+li 
+{
+    position: relative;
+}
+
+li:hover .submenu
+{
+    display: flex;
+}
+@media (max-width: 767px) {
+    .bottom {
+      height: auto;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .info_bottom {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .number_bottom,
+    .mail_bottom,
+    .adress {
+      margin: 5px 0;
+      font-size: 14px;
+      letter-spacing: normal;
+      text-align: center;
+    }
+  }
+
+  /* Для компьютера */
+  @media (min-width: 768px) {
+    .bottom {
+      height: 70px;
+    }
+
+    .info_bottom {
+      justify-content: space-around;
+    }
+
+    .number_bottom,
+    .mail_bottom,
+    .adress {
+      font-size: 15px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .info_bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .number_bottom,
+  .mail_bottom {
+    color: white;
+    letter-spacing: 2px;
+  }
+
+  .adress {
+    color: white}
+    
+#popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+#popup-btn {
+    padding: 14px;
+    font-size: 16px;
+    background-color: #fa5a5a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+#close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,300,600);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'open sans', helvetica, arial, sans;
+  background-size: cover;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.log-form {
+  width: 40%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.log-form form {
+  display: block;
+  width: 100%;
+  padding: 2em;
+}
+
+.log-form h2 {
+  width: 100%;
+  color: white;
+  font-family: 'open sans condensed';
+  font-size: 1.35em;
+  display: block;
+  background: #2a2a2a;
+  width: 100%;
+  text-transform: uppercase;
+  padding: .75em 1em .75em 1.5em;
+  -webkit-box-shadow: inset 0px 1px 1px fadeout(white, 95%);
+          box-shadow: inset 0px 1px 1px fadeout(white, 95%);
+  border: 1px solid #1d1d1d;
+  margin: 0;
+  font-weight: 200;
+}
+
+.log-form input {
+  display: block;
+  margin: auto auto;
+  width: 100%;
+  margin-bottom: 2em;
+  padding: .5em 0;
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 1.25em;
+  color: #757575;
+}
+
+.log-form input:focus {
+  outline: none;
+}
+
+.log-form .btn {
+  display: inline-block;
+  background: #1fb5bf;
+  border: 1px solid #1ba0a9;
+  padding: .5em 2em;
+  color: white;
+  margin-right: .5em;
+  -webkit-box-shadow: inset 0px 1px 0px fadeout(white, 80%);
+          box-shadow: inset 0px 1px 0px fadeout(white, 80%);
+}
+
+.log-form .btn:hover {
+  background: #23cad5;
+}
+
+.log-form .btn:active {
+  background: #1fb5bf;
+  -webkit-box-shadow: inset 0px 1px 1px fadeout(black, 90%);
+          box-shadow: inset 0px 1px 1px fadeout(black, 90%);
+}
+
+.log-form .btn:focus {
+  outline: none;
+}
+
+.log-form .forgot {
+  color: #33d3de;
+  line-height: .5em;
+  position: relative;
+  top: 2.5em;
+  text-decoration: none;
+  font-size: .75em;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.log-form .forgot:hover {
+  color: #1ba0a9;
+}
+/*# sourceMappingURL=main.css.map */
